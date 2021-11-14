@@ -1,0 +1,30 @@
+body {
+  background-color: #000000;
+}
+div {
+display:inline-block;
+  width:240px;
+height: auto;
+background-color:#60167a;
+padding: 20px;
+margin: px;
+border-radius: 13px 13px 13px 13px;
+}
+div2 {
+display:inline-block;
+  width:270px;
+height: 85%;
+background-color:white;
+padding: 40px;
+margin: 15px;
+}
+square {
+display:inline-block;
+  height: 35px;
+  width: 250px;
+  background-color: #f2daf2;
+border-radius: 0px 0px 12px 12px;
+}
+img{
+border-radius: 50%;
+}
