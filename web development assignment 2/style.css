@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+}
+div {
+display:inline-block;
+  width:270px;
+height: 200px;
+background-color:#60167a;
+padding: 40px;
+margin: 15px;
+border-radius: 13px 13px 13px 13px;
+}
+right{
+text-align: right;
+}
+div2{
+width:100px;
+font-size: 18pt; 
+height: 42px; 
+background-color:white;
+padding: 5px;
+margin: 15px;
+
+}
+footer{
+background-color:#eda509;
+height: 165px;
+width: auto;
+}
+.fa-star{
+color: #d6d6d2;
+}
+.checked {
+  color: orange;
+}
+ratingbox{
+display:inline-block;
+border: 2px solid rgb(112, 112, 112);
+  height: 80px;
+  width: 550px;
+ margin: 50px auto;
+border-radius: 32px 0px 32px 0px;
+background-color:#f0f2f5;
+}
+img{
+border-radius: 50%;
+}
+#txtbox{
+ font-size: 18pt; 
+height: 42px; 
+width : 300px; 
+}
