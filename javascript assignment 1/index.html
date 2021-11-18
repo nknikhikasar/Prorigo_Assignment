@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title></title>
+</head>
+<body>
+    <script src="script1.js"></script>
+    <table border="1">
+        <thead>
+            <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.title}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
