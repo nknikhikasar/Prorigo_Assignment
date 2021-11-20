@@ -1,42 +1,39 @@
-fetch('https://fakestoreapi.com/products')
-        .then(res => res.json())
-        .then(data => console.log(data))
-/*const api_url =
-    "https://fakestoreapi.com/products";
-
-// Defining async function
-async function getapi("https://fakestoreapi.com/products") {
-
-    // Storing response
-    const response = await fetch("https://fakestoreapi.com/products);
-
-    // Storing data in form of JSON
-    var data = await response.json();
-    console.log(data);
-    if (response) {
-        hideloader();
-    }
-    show(data);
+function ClickMe() {
+    fetch('https://fakestoreapi.com/products')
+        .then((response) => response.json()) 
+        .then((jsonBody) => {
+            buildProductsList(jsonBody);
+        });  
 }
-// Calling that async function
-getapi("https://fakestoreapi.com/products");
-function show(data) {
-    let tab =
-        `<tr>
-          <th>Name</th>
-          <th>Office</th>
-          <th>Position</th>
-          <th>Salary</th>
-         </tr>`;
 
-    // Loop to access all rows 
+function buildProductsList(products) {
+    var img = document.getElementById("div");
     for (let product of products) {
-        tab += `<tr> 
-    <td>${product.id} </td>
-    <td>${product.title}</td>
-    <td>${product.price}</td>
-    <td>${product.description}</td>
-</tr>`;
-    }
+        var a = document.createElement("img");
+        let f = product.image;
+        let l = product.title;
+        text = f.textContent || f.innerText;
+        a.src = text;
+        a.width = 80;
+        a.height = 80;
+        a.alt = 'xyz';
+        document.write(product.id);
+        document.write("<br>");
+        document.body.appendChild(a);
+        document.write("<br>");
+        document.write(product.title);
+        document.write("<br>");
+        document.write(product.price);
+        document.write("<br>");
+        document.write(product.description);
+        document.write("<br>");
+        document.write(product.category);
+        document.write("<br>");
+    } 
 }
-*/
+    
+function showName() {
+    ClickMe();   
+}
+
+
