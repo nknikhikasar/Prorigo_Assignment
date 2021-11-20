@@ -1,28 +1,27 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!--script type="text/javascript">
+        $(document).ready(function () {
+            document.getElementById("privacy_text").innerHTML = getName();
+        });
+    </!--script-->
+    <script src="scripts/Script.js"></script>
+    <title>Document</title>
 </head>
-<body>
-    <script src="script1.js"></script>
-    <table border="1">
-        <thead>
-            <tr>
-            <th>id</th>
-            <th>title</th>
-            <th>price</th>
-             </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let product of products">
-                <td>{{product.id}}</td>
-                <td>{{product.title}}</td>
-                <td>{{product.price}}</td>
-            </tr>
-        </tbody>
-    </table>
+<body id="body">
+
+
+    <input id="container" type="button" onclick="showName()" value="Result">
+    
+
+    <div id="contents">Contents Loaded</div>
+
+
 </body>
+
 </html>
