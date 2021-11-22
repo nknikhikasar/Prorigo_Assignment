@@ -1,58 +1,45 @@
-﻿html {
-    height: 100%;
-}
-
-body {
+.Product2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-size: cover;
-    font-family: sans-serif;
 }
-
-#overlay {
-    background: rgba(147, 135, 242, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-#cocktail {
-    max-width: 350px;
+.check {
+    padding-right: 10px;
+    width: 50px;
+    margin: 5px;
     text-align: center;
-    padding: 30px 30px 12px 30px;
-    color: #fff;
-    background-color: #7766d7;
-    border: 4px solid #9387f2;
-    border-radius: 5px;
+    line-height: 100px;
 }
 
-    #cocktail h1 {
-        margin: 0 0 15px 0;
-        text-transform: uppercase;
-    }
+.product-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
 
-    #cocktail img {
-        max-width: 300px;
-        border: 6px solid #fff;
-        border-radius: 150px;
-    }
+.product-image {
+    padding-right: 20px;
+}
 
-    #cocktail ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+.product-price {
+    padding-left: 100px;
+    line-height: 100px;
+}
 
-    #cocktail li {
-        padding: 15px 0;
-        font-size: 18px;
-    }
-
-        #cocktail li:not(:last-of-type) {
-            border-bottom: 1px solid #fff;
-        }
+.CheckCartListTag {
+    text-align: center;
+    font-size: medium;
+}
+.fold {
+    display: inline-block;
+    width: 800px;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 15px;
+    float: left;
+}
+.fold-cart {
+    display: inline-block;
+    width: 300px;
+    background-color: #ca03fc;
+    padding-right: 290px;
+    float: right;
+}
