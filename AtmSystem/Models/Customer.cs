@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Bank.Models
+{
+    [Table("tblCustomer")]
+    public class Customer
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Accountnumber { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public Nullable<decimal> Balance { get; set; }
+    }
+}

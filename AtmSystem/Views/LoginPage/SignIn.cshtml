@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewBag.Title = "SignIn";
+}
+
+<h2>SignIn</h2></br>
+<input type="button" title="Admin" value="Admin" onclick="location.href='@Url.Action("AdminLogin","LoginPage")'"/> |
+<input type="button" title="Customer" value="Customer" onclick="location.href = '@Url.Action("CustomerLogin","LoginPage")'"/>
+

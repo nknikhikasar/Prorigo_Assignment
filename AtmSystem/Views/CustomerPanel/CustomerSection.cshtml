@@ -1,0 +1,47 @@
+﻿@model Bank.Models.Customer
+@{
+    ViewBag.Title = "CustomerSection";
+}
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accountnumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accountnumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <input type="button" value="Withdraw Money" onclick="location.href='@Url.Action("Withdraw","CustomerPanel",new { id = Model.Accountnumber})'" /> |
+    <input type="button" value="Transfer Money" onclick="location.href='@Url.Action("Transfer","CustomerPanel",new { id = Model.Accountnumber})'" /> |
+    <input type="button" value="LogOut" onclick="location.href='@Url.Action("SignIn","LoginPage")'" />
+</p>
